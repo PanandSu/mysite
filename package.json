@@ -1,0 +1,17 @@
+{
+  "devDependencies": {
+    "vitepress": "^1.1.4"
+  },
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  }
+}
+git clone <repository_url> /path/to/local/repository
+cd /path/to/local/repository
+git checkout --orphan gh-pages
+cp -r /path/to/source/.vitepress/dist/* .
+git add .
+git commit -m "Initial commit"
+git push origin gh-pages
